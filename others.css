@@ -1,0 +1,64 @@
+body{
+    background-color: #debd5e;
+}
+
+img
+{
+    width: 75vw;
+    height: 75vw;
+    display: block;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333;*/
+    background-color: #debd5e;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4/3; /* This maintains the original 600x450 (4:3) aspect ratio */
+    border: 0;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+/* Update the container media query to better handle the layout */
+@media (min-width: 768px) {
+    .container {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    .paragraph {
+        flex: 2; /* Give more space to the text */
+    }
+    iframe {
+        flex: 1; /* Give less space to the map */
+        min-width: 300px; /* Prevent it from getting too small */
+    }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+    iframe {
+        aspect-ratio: 16/9; /* More modern aspect ratio for mobile */
+    }
+}
