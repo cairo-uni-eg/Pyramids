@@ -25,6 +25,28 @@
     --small-font-size: .875rem;
   }
 }
+.video-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust opacity as needed */
+  z-index: 0;
+}
+
+.background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
 
 /*=============== BASE ===============*/
 * {
@@ -36,6 +58,7 @@
 body {
   font-family: var(--body-font);
   background-color: var(--body-color);
+  
   color: var(--text-color);
   background-color: #debd5e;
 }
@@ -77,31 +100,31 @@ img {
 
 .Khof{
   width: 328px;
-  height: 220px;
+  height: 100%;
   border-radius: 1.5rem;
 }
 
 .Khaf{
   width: 328px;
-  height: 220px;
+  height: 100%;
   border-radius: 1.5rem;
 }
 
 .Mank{
   width: 328px;
-  height: 220px;
+  height: 100%;
   border-radius: 1.5rem;
 }
 
 .Sph{
   width: 328px;
-  height: 220px;
+  height: 100%;
   border-radius: 1.5rem;
 }
 
 .Nec{
   width: 328px;
-  height: 220px;
+  height: 100%;
   border-radius: 1.5rem;
 }
 
