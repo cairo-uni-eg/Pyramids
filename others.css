@@ -32,6 +32,12 @@ li a {
 li a:hover {
     background-color: #111;
 }
+h1{
+    font-size: 42pt;
+}
+h4{
+    font-size: 36pt;
+}
 iframe {
     width: 100%;
     height: auto;
